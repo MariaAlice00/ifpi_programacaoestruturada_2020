@@ -52,7 +52,7 @@ def main():
     q3 = input('>>> ').lower()
     sleep(1)
     if q3 == 'a':
-        print('Não! Maceió é a caoital de Alagoas.')
+        print('Não! Maceió é a capital de Alagoas.')
     elif q3 == 'b':
         print('Não! Gramado fica no Rio Grande do Sul.')
     elif q3 == 'c':
