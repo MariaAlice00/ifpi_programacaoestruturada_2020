@@ -1,5 +1,31 @@
-from time import sleep
+def q1_a(q1):
+    return q1 == 'a'
 
+def q1_b(q1):
+    return q1 == 'b'
+
+def q1_c(q1):
+    return q1 == 'c'
+
+def q2_a(q2):
+    return q2 == 'a'
+
+def q2_b(q2):
+    return q2 == 'b'
+
+def q2_c(q2):
+    return q2 == 'c'
+
+def q3_a(q3):
+    return q3 == 'a'
+
+def q3_b(q3):
+    return q3 == 'b'
+
+def q3_c(q3):
+    return q3 == 'c'
+    
+    
 def main():
     score = 0 
 
@@ -10,13 +36,13 @@ def main():
     c - dez
     ''')
     q1 = input('>>> ').lower()
-    sleep(1)
-    if q1 == 'a':
+    
+    if q1_a(q1):
         print('Correto!!!')
         score = score + 1
-    elif q1 == 'b':
+    elif q1_b(q1):
         print('Quase!')
-    elif q1 == 'c':
+    elif q1_c(q1):
         print('Um pouco demais, não acha?')
     else:
         print('Você não escolheu a, b ou c')
@@ -30,13 +56,13 @@ def main():
     c - 2000
     ''')
     q2 = input('>>> ').lower()
-    sleep(1)
-    if q2 == 'a':
+
+    if q2_a(q2):
         print('Acrescente mais 100 anos e teria a resposta certa!')
-    elif q2 == 'b':
+    elif q2_b(q2):
         print('Correto!!!')
         score = score + 1
-    elif q2 == 'c':
+    elif q2_c(q2):
         print('Faz mais tempo que isso!')
     else:
         print('Você não escolheu a, b ou c')
@@ -50,17 +76,18 @@ def main():
     c - Parnaíba
     ''')
     q3 = input('>>> ').lower()
-    sleep(1)
-    if q3 == 'a':
+
+    if q2_a(q3):
         print('Não! Maceió é a capital de Alagoas.')
-    elif q3 == 'b':
+    elif q2_b(q3):
         print('Não! Gramado fica no Rio Grande do Sul.')
-    elif q3 == 'c':
+    elif q2_c(q3):
         print('Correto!!!')
         score = score + 1
     else:
         print('Você não escolheu a, b ou c')
     print('='*20)
+
 
     print('Pontuação = {}'.format(score))
     print('Obrigada por jogar!!!')
