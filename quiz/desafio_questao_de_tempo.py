@@ -1,3 +1,6 @@
+def adivinha(numero):
+    return numero == '5'
+
 from time import sleep
 
 def main():
@@ -7,10 +10,11 @@ def main():
     
     numero = input('>>> ')
     
-    if numero == '5':
+    if adivinha(numero):
         print('Parabéns!!! Você acertou.')
     else:
         print('Você errou. Que pena.')
+        
     print('Obrigada por jogar!')
 
 
