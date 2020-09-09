@@ -6,6 +6,5 @@ def main():
         print('{}x de R$ {:.2f}'.format(c, valor_prestacao))
 
 
-
 if __name__ == "__main__":
     main()
