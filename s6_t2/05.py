@@ -1,30 +1,41 @@
-#erro 
 def main():
-    salario = float(input())
-    divida = float(input())
+    while True:
+        nota = float(input())
 
-    mes, ano = mes_ano(salario, divida)
-    print(f'{mes}/{ano}')
-
-
-def mes_ano(salario, divida):
-    mes = 10
-    ano = 2016
-
-    while divida <= salario:
-        divida += (15 / 100) * divida
-        
-        if mes > 12:
-            mes = 1
-            ano += 1
-            
+        if nota <= 10 and nota >= 0:
+            if nota_a(nota) == True:
+                print('A')
+            elif nota_b(nota) == True:
+                print('B')
+            elif nota_c(nota) == True:
+                print('C')
+            elif nota_d(nota) == True:
+                print('D')
+            elif nota_e(nota) == True:
+                print('E')
+            break
         else:
-            if mes == 3:
-                aumento = (5 / 100) * salario
-                salario += aumento
-        mes += 1
+            print('Nota inválida.')
+        
 
-    return mes, ano
+def nota_a(nota):
+    return nota >= 8.5
+
+
+def nota_b(nota):
+    return nota >= 7
+
+
+def nota_c(nota):
+    return nota >= 5
+
+
+def nota_d(nota):
+    return nota >= 4
+
+
+def nota_e(nota):
+    return nota >= 0
 
 
 if __name__ == "__main__":
