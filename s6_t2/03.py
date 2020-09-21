@@ -1,31 +1,23 @@
 def main():
-    maior, menor = maior_menor()
-    print(maior)
-    print(menor)
-
-
-def maior_menor():
-    c = 0
-
     while True:
-        num = int(input())
+        print('OPÇÕES:')
+        print('1 - SAUDAÇÃO')
+        print('2 - BRONCA')
+        print('3 - FELICITAÇÃO')
+        print('0 - FIM')
+        opcao = int(input())
 
-        if num == 0: 
+        if opcao == 1:
+            print(f'{1} - Olá. Como vai?')
+        elif opcao == 2:
+            print(f'{2} - Vamos estudar mais.')
+        elif opcao == 3:
+            print(f'{3} - Meus Parabéns!')
+        elif opcao == 0:
+            print(f'{0} - Fim de serviço.')
             break
-        
-        if c == 0 and num != 0:
-            maior = num
-            menor = num
-        
         else:
-            if num > maior:
-                maior = num
-            if num < menor:
-                menor = num
-
-        c += 1
-    
-    return maior, menor
+            print('Opção inválida.')
 
 
 if __name__ == "__main__":
