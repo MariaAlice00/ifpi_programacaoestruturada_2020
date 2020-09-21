@@ -1,42 +1,39 @@
 def main():
+    h = 5.50
+    c = 6.80
+    m = 4.50
+    a = 7
+    q = 4
+    soma = 0
+
     while True:
-        nota = float(input())
+        print('CÓDIGO  PRODUTO         PREÇO (R$)')
+        print('H       Hamburger       5,50')
+        print('C       Cheeseburger    6,80')
+        print('M       Misto Quente    4,50')
+        print('A       Americano       7,00')
+        print('Q       Queijo Prato    4,00')
+        print('X       PARA TOTAL DA CONTA')
 
-        if nota <= 10 and nota >= 0:
-            if nota_a(nota) == True:
-                print('A')
-            elif nota_b(nota) == True:
-                print('B')
-            elif nota_c(nota) == True:
-                print('C')
-            elif nota_d(nota) == True:
-                print('D')
-            elif nota_e(nota) == True:
-                print('E')
+        codigo = input().upper()[0]
+
+        if codigo == 'X':
+            print('{:.2f}'.format(soma))
             break
+
+        if codigo == 'H':
+            soma += h
+        elif codigo == 'C':
+            soma += c
+        elif codigo == 'M':
+            soma += m
+        elif codigo == 'A':
+            soma += a
+        elif codigo == 'Q':
+            soma += q
         else:
-            print('Nota inválida.')
+            print('Opção inválida.')
         
-
-def nota_a(nota):
-    return nota >= 8.5
-
-
-def nota_b(nota):
-    return nota >= 7
-
-
-def nota_c(nota):
-    return nota >= 5
-
-
-def nota_d(nota):
-    return nota >= 4
-
-
-def nota_e(nota):
-    return nota >= 0
-
 
 if __name__ == "__main__":
     main()
