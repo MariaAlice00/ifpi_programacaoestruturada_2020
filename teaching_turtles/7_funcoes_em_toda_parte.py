@@ -12,7 +12,7 @@ def draw_sun(sun_size, sun_colour):
     pendown()
     begin_fill()
 
-    for sun in range(60):
+    for sun in range(30):
         forward(sun_size)
         right(100)
     
@@ -22,7 +22,7 @@ def draw_sun(sun_size, sun_colour):
 
 def many_sun():
     colours = ['red', 'gold3', 'skyblue', 'darkgreen', 'deeppink2', 'magenta3', 'black']
-    for sun in range(30):
+    for sun in range(60):
         move_to_random_location()
         draw_sun(randint(10,50), choice(colours))
 
