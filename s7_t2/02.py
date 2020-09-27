@@ -18,7 +18,6 @@ def main():
 
         print(', {}'.format(soma), end='')
 
-    
 
 if __name__ == "__main__":
     main()
