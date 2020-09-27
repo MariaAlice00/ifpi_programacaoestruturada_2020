@@ -44,6 +44,7 @@ def draw_constellation(number_of_stars):
 
     draw_star(randint(7,15), 'white')
 
+    
 def many_stars():
     for star in range(30):
         move_to_random_location()
