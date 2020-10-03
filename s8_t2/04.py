@@ -1,9 +1,3 @@
-'''Um time de basquete possui 12 jogadores. Deseja-se um programa que, dado o nome e a altura
-dos jogadores, determine:
-a. o nome e a altura do jogador mais alto;
-b. a média de altura do time;
-c. os jogadores com altura superior à média, listando o nome e a altura de cada um.'''
-
 def main():
     nomes_jogadores = []
     alturas_jogadores = []
@@ -16,16 +10,16 @@ def main():
         alturas_jogadores.append(altura)
 
     alto, nome_alto = mais_alto(alturas_jogadores, nomes_jogadores)
-    print('JOGADOR MAIS ALTO DO TIME') # o nome e a altura do jogador mais alto
+    print('JOGADOR MAIS ALTO DO TIME') 
     print(nome_alto)
     print('{:.2f}'.format(alto))
 
     media = media_altura(alturas_jogadores)
-    print('ALTURA MÉDIA DO TIME') # a média de altura do time
+    print('ALTURA MÉDIA DO TIME') 
     print('{:.2f}'.format(media))
 
     mais_que_media = mais_alto_media(alturas_jogadores, nomes_jogadores)
-    print('JOGADORES MAIS ALTOS QUE A MÉDIA DO TIME') # o nome e a altura de cada um
+    print('JOGADORES MAIS ALTOS QUE A MÉDIA DO TIME') 
     pos = 0
     for n in mais_que_media:
         if pos % 2 == 0:
