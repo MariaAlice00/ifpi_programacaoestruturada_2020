@@ -1,4 +1,3 @@
-'''Leia um dia e um mês como números inteiros distintos e informe as cidades que fazem aniversário nessa data. Veja o exemplo para o dia 9 e mês 2:'''
 def main():
     dia = int(input())
     mes = int(input())
