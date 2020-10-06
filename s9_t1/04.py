@@ -1,5 +1,3 @@
-'''Leia uma população e informe as cidades com população maior que o valor lido. Veja o exemplo:
-Veja o exemplo para a leitura de 50000 para a população:'''
 def main():
     populacao = int(input())
 
