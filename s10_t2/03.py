@@ -1,5 +1,3 @@
-'''Suponha que vamos jogar um dado e queremos saber quantas vezes cada face (de 1 a 6) caiu. Faça um programa que leia o resultado de cada jogada do dado e armazena em um dicionário. A face do dado é a chave para o dicionário e a leitura de um valor 0 (zero) na face encerra o jogo. Mostre quantas vezes o dado foi lançado e quantas vezes cada face saiu.'''
-
 def formar_lista_de_jogadas():
     jogadas = []
     vezes = 0
