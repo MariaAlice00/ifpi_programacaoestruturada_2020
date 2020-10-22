@@ -1,4 +1,3 @@
-
 def ano_nascimento(lista):
     d = dict()
     for c in lista:
@@ -17,7 +16,6 @@ def main():
         lista.append(ano)
 
     lista.sort()
-
 
     h = ano_nascimento(lista)
     for k, v in h.items():
