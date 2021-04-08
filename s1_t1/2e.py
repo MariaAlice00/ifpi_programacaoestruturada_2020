@@ -1,6 +1,0 @@
-altura = float(input())
-comprimento = float(input())
-largura = float(input())
-print(largura*comprimento)
-print(largura*comprimento*altura)
-print(2*altura*largura+2*altura*comprimento)
